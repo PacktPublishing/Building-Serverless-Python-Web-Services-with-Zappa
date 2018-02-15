@@ -15,9 +15,9 @@ login_manager.session_protection = 'strong'
 login_manager.login_view = 'auth.login'
 login_manager.login_message_category = "info"
 
-def create_app():
+def create_app(environment):
     app = Flask(__name__)
-    app.config.from_object(config['develop'])
+    app.config.from_object(config[environment])
 
     csrf.init_app(app)
     db.init_app(app)
@@ -25,9 +25,9 @@ def create_app():
     login_manager.init_app(app)
 
     from .auth import auth as auth_blueprint
-    app.register_blueprint(auth_blueprint, url_prefix='/auth')
+    app.register_blueprint(auth_blueprint, url_prefix='/%s/auth' % app.config['ENVIRON'])
 
     from .todo import todo as todo_blueprint
-    app.register_blueprint(todo_blueprint, url_prefix='/todos')
+    app.register_blueprint(todo_blueprint, url_prefix='/%s/todos' % app.config['ENVIRON'])
 
     return app
