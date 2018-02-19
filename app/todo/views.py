@@ -7,18 +7,13 @@ from app.todo.forms import TodoForm
 from app.todo.models import Todo
 
 
-def _get_user():
-    return current_user.email if current_user.is_authenticated else None
-
-
-
 @todo.route('/', methods=['GET', 'POST'])
 @login_required
 def list():
     context = dict()
     form = TodoForm()
     if form.validate_on_submit():
-        Todo(form.description.data, creator=_get_user()).save()
+        Todo(form.description.data, creator=current_user.email).save()
         return redirect(url_for('todo.list'))
     context['form'] = form
     context['todos'] = current_user.todos
