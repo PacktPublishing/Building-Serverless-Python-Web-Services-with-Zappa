@@ -25,9 +25,9 @@ def create_app(environment):
     login_manager.init_app(app)
 
     from .auth import auth as auth_blueprint
-    app.register_blueprint(auth_blueprint, url_prefix='/%s/auth' % app.config['ENVIRON'])
+    app.register_blueprint(auth_blueprint, url_prefix='/auth')
 
     from .todo import todo as todo_blueprint
-    app.register_blueprint(todo_blueprint, url_prefix='/%s/todos' % app.config['ENVIRON'])
+    app.register_blueprint(todo_blueprint, url_prefix='/todos')
 
     return app

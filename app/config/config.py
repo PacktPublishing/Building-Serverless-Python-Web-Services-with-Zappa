@@ -1,8 +1,14 @@
 import os
+from shutil import copyfile
+
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
 def get_sqlite_uri(db_name):
-    return 'sqlite:////tmp/%s' % db_name
+    src = os.path.join(BASE_DIR, db_name)
+    dst = "/tmp/%s" % db_name
+    copyfile(src, dst)
+    return 'sqlite:///%s' % dst
 
 
 class Config(object):
@@ -17,16 +23,14 @@ class Config(object):
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    ENVIRON = 'dev'
     SQLALCHEMY_DATABASE_URI = get_sqlite_uri('todo-dev.db')
 
 
 class ProductionConfig(Config):
-    ENVIRON = 'production'
     SQLALCHEMY_DATABASE_URI = get_sqlite_uri('todo-prod.db')
 
 
 config = {
     'dev': DevelopmentConfig,
-    'production': ProductionConfig
+    'production': ProductionConfig,
 }
