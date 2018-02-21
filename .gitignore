@@ -102,3 +102,6 @@ ENV/
 
 # IDE stuff
 .vscode
+
+# __pycache__
+__pycache__
