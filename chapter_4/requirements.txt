@@ -1,0 +1,6 @@
+Flask-JWT==0.3.2
+Flask-SQLAlchemy==2.3.2
+Flask-Migrate==2.1.1
+flask-restful==0.3.6
+webargs==2.0.0
+zappa==0.45.1
