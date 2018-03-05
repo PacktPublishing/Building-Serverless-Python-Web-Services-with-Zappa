@@ -35,4 +35,4 @@ class LoginResource(Resource):
         user = User.query.filter_by(email=data['email']).first()
         if user is not None and user.verify_password(data['password']):
             token = generate_token(user)
-            return jsonify({'token': str(token)})
+            return jsonify({'token': token.decode("utf-8")})
