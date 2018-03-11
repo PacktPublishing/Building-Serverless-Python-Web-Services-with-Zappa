@@ -1,0 +1,1 @@
+"Hello World ! Response by lambda function."
