@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "app_function": "hello.app",
+        "aws_region": "ap-south-1",
+        "profile_name": "default",
+        "project_name": "lambda-bottle-p",
+        "runtime": "python3.6",
+        "s3_bucket": "zappa-kvf13ygy6"
+    }
+}
