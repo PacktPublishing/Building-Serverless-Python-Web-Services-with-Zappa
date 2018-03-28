@@ -1,0 +1,2 @@
+# Prevent AWS credentials to be commit in public repo.
+environments.json

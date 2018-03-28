@@ -12,6 +12,13 @@ name = "pypi"
 [packages]
 
 django = "*"
+pylint = "*"
+pillow = "*"
+zappa = "*"
+django-storages = "*"
+"boto3" = "*"
+boto = "*"
+django-imagekit = "*"
 
 
 [requires]

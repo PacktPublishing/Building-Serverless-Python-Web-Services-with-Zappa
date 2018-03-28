@@ -1,0 +1,11 @@
+{
+    "dev": {
+        "aws_region": "ap-south-1",
+        "django_settings": "imageGalleryProject.settings",
+        "profile_name": "default",
+        "project_name": "imagegallerypro",
+        "runtime": "python3.6",
+        "s3_bucket": "chapter-5",
+        "remote_env": "s3://important-credentials-bucket/environments.json"
+    }
+}

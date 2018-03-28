@@ -25,7 +25,7 @@ SECRET_KEY = '_xa)%5#v2w954j9bl2*xt@tkk0@w+x9nm-*jj20-&0=c(x0pxn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'cfsla2gds0.execute-api.ap-south-1.amazonaws.com']
 
 
 # Application definition
@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'gallery',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -70,13 +73,20 @@ TEMPLATES = [
 WSGI_APPLICATION = 'imageGalleryProject.wsgi.application'
 
 
+
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
+
+# Copy our working DB to /tmp..
+from shutil import copyfile
+src = os.path.join(BASE_DIR, 'db.sqlite3')
+dst = "/tmp/db.sqlite3"
+copyfile(src, dst)
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': dst,
     }
 }
 
@@ -114,7 +124,23 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.0/howto/static-files/
+# AWS S3 Settings
+AWS_HEADERS = {
+    'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+    'Cache-Control': 'max-age=94608000',
+}
 
-STATIC_URL = '/static/'
+AWS_STORAGE_BUCKET_NAME = 'chapter-5'
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_CLOUDFRONT_DOMAIN = 'dl76lqo8jmttq.cloudfront.net'
+
+MEDIAFILES_LOCATION = 'media'
+MEDIA_ROOT = '/%s/' % MEDIAFILES_LOCATION
+MEDIA_URL = '/%s/%s/' % (AWS_CLOUDFRONT_DOMAIN, MEDIAFILES_LOCATION)
+DEFAULT_FILE_STORAGE = 'gallery.utils.MediaStorage'
+
+STATICFILES_LOCATION = 'static'
+STATIC_ROOT = '/%s/' % STATICFILES_LOCATION
+STATIC_URL = '/%s/%s/' % (AWS_CLOUDFRONT_DOMAIN, STATICFILES_LOCATION)
+STATICFILES_STORAGE = 'gallery.utils.StaticStorage'
