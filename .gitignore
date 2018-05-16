@@ -109,3 +109,6 @@ __pycache__
 
 # Prevent AWS credentials to be commit in public repository
 **//**/environment.json
+
+# Prevent confidential config to be commit in public respository
+book-configs/
