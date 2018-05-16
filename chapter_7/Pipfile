@@ -16,7 +16,6 @@ falcon = "*"
 zappa = "*"
 gunicorn = "*"
 peewee = "*"
-unirest = "*"
 requests = "*"
 
 
