@@ -4,7 +4,7 @@ import requests
 import falcon
 
 from models import QuoteModel
-from schedulers import fetch_quote
+from mashape import fetch_quote
 
 class QuoteResource:
     def on_get(self, req, resp):
