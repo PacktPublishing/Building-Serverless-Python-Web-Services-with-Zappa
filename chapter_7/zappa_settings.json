@@ -8,7 +8,7 @@
         "s3_bucket": "zappa-0edixmwpd",
         "remote_env": "s3://book-configs/chapter-7-config.json",
         "events": [{
-           "function": "schedulers.fetch_quote",
+           "function": "schedulers.set_quote_of_the_day",
            "expression": "cron(0 12 * * ? *)"
        }]
     }

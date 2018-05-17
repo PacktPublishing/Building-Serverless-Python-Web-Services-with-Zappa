@@ -4,22 +4,22 @@ import requests
 import falcon
 
 from models import QuoteModel
-
+from schedulers import fetch_quote
 
 class QuoteResource:
     def on_get(self, req, resp):
         """Handles GET requests"""
         if req.get_param('type') in ['daily', None]:
-            data = QuoteModel.select().where(QuoteModel.created_at == datetime.date.today()).get()
-            resp.media = {'quote': data.quote, 'author': data.author, 'category': data.category}
+            data = QuoteModel.select().where(QuoteModel.created_at == datetime.date.today())
+            if data.exists():
+                data = data.get()
+                resp.media = {'quote': data.quote, 'author': data.author, 'category': data.category}
+            else:
+                quote = fetch_quote()
+                QuoteModel.create(**quote)
+                resp.media = quote
         elif req.get_param('type') == 'random':
-            response = requests.get(os.environ.get('Mashape_API_Endpoint'),
-                headers={
-                    'X-Mashape-Key': os.environ.get('X_Mashape_Key'),
-                    'Accept': 'application/json'
-                }
-            )
-            resp.media = response.json()[0]
+            resp.media = fetch_quote()
         else:
             raise falcon.HTTPError(falcon.HTTP_400,'Invalid Quote type','Supported types are \'daily\' or \'random\'.')
 
