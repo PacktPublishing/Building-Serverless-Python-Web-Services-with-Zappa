@@ -7,6 +7,10 @@
         "runtime": "python3.6",
         "s3_bucket": "zappa-0edixmwpd",
         "remote_env": "s3://book-configs/chapter-7-config.json",
+        "cache_cluster_enabled": false,
+        "cache_cluster_size": 0.5,
+        "cache_cluster_ttl": 300,
+        "cache_cluster_encrypted": false,
         "events": [{
            "function": "schedulers.set_quote_of_the_day",
            "expression": "cron(0 12 * * ? *)"
