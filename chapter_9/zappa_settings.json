@@ -1,0 +1,21 @@
+{
+    "dev": {
+        "app_function": "resources.api",
+        "aws_region": "ap-south-1",
+        "profile_name": "default",
+        "project_name": "chapter-9",
+        "runtime": "python3.6",
+        "s3_bucket": "zappa-0edixmwpd",
+        "remote_env": "s3://book-configs/chapter-9-config.json",
+        "cache_cluster_enabled": false,
+        "cache_cluster_size": 0.5,
+        "cache_cluster_ttl": 300,
+        "cache_cluster_encrypted": false,
+        "events": [{
+           "function": "schedulers.set_quote_of_the_day",
+           "expression": "cron(0 12 * * ? *)"
+       }],
+       "domain": "quote-api.abdulwahid.info",
+       "certificate_arn":"arn:aws:acm:us-east-1:042373950390:certificate/af0796fa-3a46-49ae-97d8-90a6b5ff6784"
+    }
+}
