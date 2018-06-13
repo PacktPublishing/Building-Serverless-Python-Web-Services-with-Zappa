@@ -14,7 +14,11 @@
         "events": [{
            "function": "schedulers.set_quote_of_the_day",
            "expression": "cron(0 12 * * ? *)"
-       }],
+       },
+       {
+        "function": "schedulers.publish_quote_of_the_day",
+        "expression": "cron(0 2 * * ? *)"
+        }],
        "domain": "quote-api.abdulwahid.info",
        "certificate_arn":"arn:aws:acm:us-east-1:042373950390:certificate/af0796fa-3a46-49ae-97d8-90a6b5ff6784"
     }
