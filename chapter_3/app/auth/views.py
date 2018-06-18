@@ -11,7 +11,7 @@ def login():
     if form.validate_on_submit():
         user_by_email = User.query.filter_by(email=form.email.data).first()
         if user_by_email is not None and user_by_email.verify_password(form.password.data):
-            login_user(user_by_email.seen())
+            login_user(user_by_email)
             return redirect(url_for('todo.list'))
     return render_template('auth/login.html', form=form)
 

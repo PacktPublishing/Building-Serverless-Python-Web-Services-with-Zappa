@@ -4,7 +4,7 @@ from wtforms.validators import Required, Length
 
 
 class TodoForm(FlaskForm):
-    description = StringField(
+    title = StringField(
         'What needs to be done?', validators=[Required(), Length(1, 128)]
     )
     submit = SubmitField('Submit')

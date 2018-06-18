@@ -13,11 +13,11 @@ def list():
     context = dict()
     form = TodoForm()
     if form.validate_on_submit():
-        Todo(form.description.data, creator=current_user.email).save()
+        Todo(form.title.data, created_by=current_user.email).save()
         return redirect(url_for('todo.list'))
     context['form'] = form
     context['todos'] = current_user.todos
-    context['items_left'] = len([todo for todo in current_user.todos if not todo.is_finished])
+    context['items_left'] = len([todo for todo in current_user.todos if not todo.is_completed])
     return render_template('todo/list.html', **context)
 
 
