@@ -6,36 +6,35 @@ from app.config.models import BaseModel
 class Todo(db.Model, BaseModel):
     __tablename__ = 'todo'
     id = db.Column(db.Integer, primary_key=True)
-    description = db.Column(db.String(128))
-    is_finished = db.Column(db.Boolean, default=False)
-    creator = db.Column(db.String(64), db.ForeignKey('user.email'))
+    title = db.Column(db.String(128))
+    is_completed = db.Column(db.Boolean, default=False)
+    created_by = db.Column(db.String(64), db.ForeignKey('user.email'))
     user = db.relationship('User', backref=db.backref('todos', lazy=True))
 
-    def __init__(self, description, creator=None, created_at=None):
-        self.description = description
-        self.creator = creator
+    def __init__(self, title, created_by=None, created_at=None):
+        self.title = title
+        self.created_by = created_by
 
     def __repr__(self):
         return '<{0} Todo: {1} by {2}>'.format(
-            self.status, self.description, self.creator or 'None')
+            self.status, self.title, self.created_by or 'None')
 
     @property
     def status(self):
-        return 'finished' if self.is_finished else 'open'
+        return 'completed' if self.is_completed else 'open'
 
-    def finished(self):
-        self.is_finished = True
-        self.finished_at = datetime.utcnow()
+    def completed(self):
+        self.is_completed = True
         self.save()
 
     def reopen(self):
-        self.is_finished = False
-        self.finished_at = None
+        self.is_completed = False
         self.save()
 
     def to_dict(self):
         return {
             'id': self.id,
-            'description': self.description,
+            'title': self.title,
+            'created_by': self.created_by,
             'status': self.status,
         }
