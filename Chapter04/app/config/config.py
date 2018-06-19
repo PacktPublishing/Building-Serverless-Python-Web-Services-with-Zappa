@@ -6,9 +6,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 def get_sqlite_uri(db_name):
     src = os.path.join(BASE_DIR, db_name)
-    # dst = "/tmp/%s" % db_name
-    # copyfile(src, dst)
-    return 'sqlite:///%s' % src
+    dst = "/tmp/%s" % db_name
+    copyfile(src, dst)
+    return 'sqlite:///%s' % dst
 
 
 class Config(object):
@@ -33,5 +33,5 @@ class ProductionConfig(Config):
 
 config = {
     'dev': DevelopmentConfig,
-    'production': ProductionConfig,
+    'prod': ProductionConfig,
 }

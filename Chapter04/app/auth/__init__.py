@@ -7,6 +7,3 @@ auth_api = Api(auth, catch_all_404s=True)
 
 auth_api.add_resource(SignUpResource, '/signup', endpoint='signup')
 auth_api.add_resource(LoginResource, '/login', endpoint='login')
-
-
-
