@@ -26,15 +26,6 @@ class DailyQuoteResource:
             raise falcon.HTTPError(falcon.HTTP_500, str(e))
 
 
-class RandomQuoteResource:
-    def on_get(self, req, resp):
-        """Handles GET requests"""
-        try:
-            resp.media = fetch_quote()
-        except Exception as e:
-            raise falcon.HTTPError(falcon.HTTP_500, str(e))
-
-
 class SubscribeQuoteResource:
     def on_get(self, req, resp):
         """Handles GET requests"""
@@ -63,6 +54,5 @@ class UnSubscribeQuoteResource:
 
 api = falcon.API()
 api.add_route('/daily', DailyQuoteResource())
-api.add_route('/random', RandomQuoteResource())
 api.add_route('/subscribe', SubscribeQuoteResource())
 api.add_route('/unsubscribe', UnSubscribeQuoteResource())
