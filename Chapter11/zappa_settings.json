@@ -1,0 +1,46 @@
+{
+    "dev": {
+        "app_function": "resources.api",
+        "profile_name": "default",
+        "project_name": "chapter11",
+        "runtime": "python3.6",
+        "s3_bucket": "zappa-ss0sm7k4r",
+        "remote_env": "s3://book-configs/chapter-11-config.json",
+        "dead_letter_arn": "arn:aws:sns:ap-south-1:042373950390:UnhandledException",
+        "domain": "random-quote.abdulwahid.info",
+        "certificate_arn":"arn:aws:acm:us-east-1:042373950390:certificate/af0796fa-3a46-49ae-97d8-90a6b5ff6784",
+        "api_key_required": true
+    },
+    "dev_iam": {
+        "app_function": "resources.api",
+        "profile_name": "default",
+        "project_name": "chapter11",
+        "runtime": "python3.6",
+        "s3_bucket": "zappa-ss0sm7k4r",
+        "remote_env": "s3://book-configs/chapter-11-config.json",
+        "domain": "random-quote-iam.abdulwahid.info",
+        "certificate_arn":"arn:aws:acm:us-east-1:042373950390:certificate/af0796fa-3a46-49ae-97d8-90a6b5ff6784",
+        "iam_authorization": true
+    },
+    "dev_xray": {
+        "app_function": "resources.api",
+        "profile_name": "default",
+        "project_name": "chapter11",
+        "runtime": "python3.6",
+        "s3_bucket": "zappa-ss0sm7k4r",
+        "remote_env": "s3://book-configs/chapter-11-config.json",
+        "xray_tracing": true
+    },
+    "dev_vpc": {
+        "app_function": "resources.api",
+        "profile_name": "default",
+        "project_name": "chapter11",
+        "runtime": "python3.6",
+        "s3_bucket": "zappa-ss0sm7k4r",
+        "remote_env": "s3://book-configs/chapter-11-config.json",
+        "vpc_config": {
+            "SubnetIds": [ "subnet-1b10a072" ],
+            "SecurityGroupIds": [ "sg-892c4be0" ]
+        }
+    }
+}

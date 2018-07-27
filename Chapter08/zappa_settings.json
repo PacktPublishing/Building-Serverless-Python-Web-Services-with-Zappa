@@ -3,7 +3,7 @@
         "app_function": "resources.api",
         "aws_region": "ap-south-1",
         "profile_name": "default",
-        "project_name": "chapter-7",
+        "project_name": "chapter-8",
         "runtime": "python3.6",
         "s3_bucket": "zappa-0edixmwpd",
         "remote_env": "s3://book-configs/chapter-7-config.json",

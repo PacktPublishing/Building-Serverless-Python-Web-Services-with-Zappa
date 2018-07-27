@@ -12,13 +12,12 @@ pylint = "*"
 
 [packages]
 
-falcon = "*"
 zappa = "*"
+falcon = "*"
 gunicorn = "*"
-peewee = "*"
 requests = "*"
 "boto3" = "*"
-argcomplete = "*"
+requests-aws-sign = "*"
 
 
 [requires]
