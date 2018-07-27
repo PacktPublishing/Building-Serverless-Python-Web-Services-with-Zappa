@@ -25,5 +25,18 @@ class QuoteModel(Model):
     category = CharField()
     created_at = DateTimeField(default= datetime.date.today())
 
+
+class OTPModel(Model):
+
+    class Meta:
+        database = db
+
+    id = IntegerField(primary_key= True)
+    mobile_number = CharField()
+    otp = IntegerField()
+    is_verified = BooleanField(default=False)
+    created_at = DateTimeField(default= datetime.date.today())
+
+
 db.connect()
-db.create_tables([QuoteModel])
+db.create_tables([QuoteModel, OTPModel])

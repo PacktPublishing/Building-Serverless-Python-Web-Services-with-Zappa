@@ -60,3 +60,16 @@ class QuoteSubscription:
             :param message: string formated data.
         """
         self.client.publish(Message=message, TopicArn=self.topic_arn)
+
+
+    def send_sms(self, mobile_number, message):
+        """
+        This method is used to send a SMS to a mobile number.
+        Required parameters:
+            :param mobile_number: string formated data.
+            :param message: string formated data.
+        """
+        self.client.publish(
+            PhoneNumber=mobile_number,
+            Message=message
+        )
