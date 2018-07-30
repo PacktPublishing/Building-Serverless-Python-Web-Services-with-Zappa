@@ -54,34 +54,14 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 * Computer Vision with OpenCV 3 and Qt5 [[Packt]](https://www.packtpub.com/application-development/computer-vision-opencv-3-and-qt5?utm_source=github&utm_medium=repository&utm_campaign=9781788472395 ) [[Amazon]](https://www.amazon.com/dp/178847239X)
 
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
-
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
 
 ## Get to Know the Author
 **Amin Ahmadi Tazehkandi**
 is an Iranian author, developer, and a computer vision expert. He completed his computer software engineering studies in Iran and has worked for numerous software and industrial companies around the world.
 
-****
-0
-
-****
-0
-
-****
-0
-
-****
-0
 
 ## Other books by the authors
 [Computer Vision with OpenCV 3 and Qt5](https://www.packtpub.com/application-development/computer-vision-opencv-3-and-qt5?utm_source=github&utm_medium=repository&utm_campaign=9781788472395 )
 
-[]()
 
-[]()
-
-[]()
-
-[]()
 
