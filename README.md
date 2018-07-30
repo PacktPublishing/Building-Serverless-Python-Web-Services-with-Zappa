@@ -43,13 +43,11 @@ With the following software and hardware list you can run all code files present
 ### Software and Hardware List
 | Chapter | Software required | OS required |
 | -------- | ------------------------------------ | ----------------------------------- |
-| 1 | demo | Windows, Mac OS X, and Linux (Any) |
-| 2 | demo | Windows, Mac OS X, and Linux (Any) |
-| 3 | demo | Windows, Mac OS X, and Linux (Any) |
-| 4 | demo | Windows, Mac OS X, and Linux (Any) |
-|  |  | Windows, Mac OS X, and Linux (Any) |
-|  |  | Windows, Mac OS X, and Linux (Any) |
-
+| 1-12 | Python 3.6 | Windows, Mac OS X, and Linux (Any) |
+| 1-12 | Zappa | Windows, Mac OS X, and Linux (Any) |
+| 1-12 | AWS | Windows, Mac OS X, and Linux (Any) |
+| 1-12 | Pipenv | Windows, Mac OS X, and Linux (Any) |
+| 12 | Docker | Windows, Mac OS X, and Linux (Any) |
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/BuildingServerlessPythonWebServiceswithZappa_ColorImages.pdf).
 
@@ -63,4 +61,5 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 **Abdulwahid Abdulhaque Barguzar**
 is a Software Architect and an active contributor in the open source community. He has developed a deep understanding of architecting software product development through Python web frameworks and JavaScript frameworks. He is passionate about implementing and mastering new technologies. In his free time, he researches innovative approaches to rapidly developing and designing a software product and automation testing, aiming to become a master Software Architect.
 
-
+### Suggestions and Feedback
+[Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
