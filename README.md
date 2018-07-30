@@ -4,7 +4,7 @@
 
 This is the code repository for [Building Serverless Python Web Services with Zappa](https://www.packtpub.com/application-development/building-serverless-python-web-services-zappa?utm_source=github&utm_medium=repository&utm_campaign=9781788837613 ), published by Packt.
 
-**Master serverless architectures in Python and their implementation, with Zappa on three different frameworks. **
+**Master serverless architectures in Python and their implementation, with Zappa on three different frameworks.**
 
 ## What is this book about?
 Serverless applications are becoming very popular these days, not just because they save developers the trouble of managing the servers, but also because they provide several other benefits such as cutting heavy costs and improving the overall performance of the application.
@@ -51,41 +51,16 @@ With the following software and hardware list you can run all code files present
 |  |  | Windows, Mac OS X, and Linux (Any) |
 |  |  | Windows, Mac OS X, and Linux (Any) |
 
-We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https:/?/?www.?packtpub.?com/?sites/?default/?files/downloads/?BuildingServerlessPythonWebServiceswithZappa_?ColorImages.?pdf).
+We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/BuildingServerlessPythonWebServiceswithZappa_ColorImages.pdf).
 
 ### Related products
 *  [[Packt]](https://www.packtpub.com/web-development/python-microservices-development?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1785881116)
 
 * Building Serverless Applications with Python [[Packt]](https://www.packtpub.com/application-development/building-serverless-applications-python?utm_source=github&utm_medium=repository&utm_campaign=9781787288676 ) [[Amazon]](https://www.amazon.com/dp/1787288676)
 
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
-
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
 
 ## Get to Know the Author
 **Abdulwahid Abdulhaque Barguzar**
 is a Software Architect and an active contributor in the open source community. He has developed a deep understanding of architecting software product development through Python web frameworks and JavaScript frameworks. He is passionate about implementing and mastering new technologies. In his free time, he researches innovative approaches to rapidly developing and designing a software product and automation testing, aiming to become a master Software Architect.
 
-****
-0
-
-****
-0
-
-****
-0
-
-****
-0
-
-## Other books by the authors
-[]()
-
-[]()
-
-[]()
-
-[]()
-
-[]()
 
