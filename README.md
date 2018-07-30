@@ -15,7 +15,7 @@ Integrate Flask-based Python applications, via AWS-CLI configuration.
 Design Rest APIs integrated with Zappa for Flask and Django . 
 Create a project in the Pyramid framework and configure it with Zappa. 
 Generate SSL Certificates using Amazon Certificate Manager. 
-Configure custom domains with AWS Route53. 
+Configure custom domains with AWS Route 53. 
 Create a Docker container similar to AWS lambda. 
 
 If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1788837614) today!
