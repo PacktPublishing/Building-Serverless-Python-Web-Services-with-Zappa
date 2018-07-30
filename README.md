@@ -47,7 +47,7 @@ With the following software and hardware list you can run all code files present
 | 5 | Python 3.6.5 | Windows, Mac OS X, and Linux (Any) |
 | 7 | OpenCV 3.4.2  | Windows, Mac OS X, and Linux (Any) |
 
-We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https:/?/?www.?packtpub.?com/?sites/?default/?files/downloads/?HandsOnAlgorithmsforComputerVision_?ColorImages.?pdf).
+We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/HandsOnAlgorithmsforComputerVision_ColorImages.pdf).
 
 ### Related products
 * Practical Computer Vision [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/practical-computer-vision?utm_source=github&utm_medium=repository&utm_campaign=9781788297684 ) [[Amazon]](https://www.amazon.com/dp/B079QXG3WR)
