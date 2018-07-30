@@ -4,7 +4,7 @@
 
 This is the code repository for [Building Serverless Python Web Services with Zappa](https://www.packtpub.com/application-development/building-serverless-python-web-services-zappa?utm_source=github&utm_medium=repository&utm_campaign=9781788837613 ), published by Packt.
 
-**Master serverless architectures in Python and their implementation, with Zappa on three different frameworks.**
+**Build and deploy serverless applications on AWS using Zappa**
 
 ## What is this book about?
 Serverless applications are becoming very popular these days, not just because they save developers the trouble of managing the servers, but also because they provide several other benefits such as cutting heavy costs and improving the overall performance of the application.
@@ -25,6 +25,7 @@ alt="https://www.packtpub.com/" border="5" /></a>
 
 ## Instructions and Navigations
 All of the code is organized into folders. For example, Chapter02.
+Chapter 10 does not contain any code files.
 
 The code will look like the following:
 ```
@@ -36,7 +37,7 @@ response = client.invoke(
 ```
 
 **Following is what you need for this book:**
-Python Developers who are interested in learning how to develop fast and highly scalable serverless applications in Python, will find this book useful
+Python Developers who are interested in learning how to develop fast and highly scalable serverless applications in Python, will find this book useful.
 
 With the following software and hardware list you can run all code files present in the book (Chapter 1-12).
 ### Software and Hardware List
@@ -48,13 +49,12 @@ With the following software and hardware list you can run all code files present
 | 4 | demo | Windows, Mac OS X, and Linux (Any) |
 |  |  | Windows, Mac OS X, and Linux (Any) |
 |  |  | Windows, Mac OS X, and Linux (Any) |
-|  |  | Windows, Mac OS X, and Linux (Any) |
-|  |  | Windows, Mac OS X, and Linux (Any) |
+
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/BuildingServerlessPythonWebServiceswithZappa_ColorImages.pdf).
 
 ### Related products
-*  [[Packt]](https://www.packtpub.com/web-development/python-microservices-development?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1785881116)
+* Python Microservices Development [[Packt]](https://www.packtpub.com/web-development/python-microservices-development?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1785881116)
 
 * Building Serverless Applications with Python [[Packt]](https://www.packtpub.com/application-development/building-serverless-applications-python?utm_source=github&utm_medium=repository&utm_campaign=9781787288676 ) [[Amazon]](https://www.amazon.com/dp/1787288676)
 
