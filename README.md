@@ -4,7 +4,7 @@
 
 This is the code repository for [Hands-On Algorithms for Computer Vision](https://www.packtpub.com/application-development/hands-algorithms-computer-vision?utm_source=github&utm_medium=repository&utm_campaign=9781789130942 ), published by Packt.
 
-**Create powerful, accurate, and real-time Computer Vision applications using a perfect blend of algorithms and filters. Also learn about object tracking and foreground extractions with a variety of new filters and algorithms.**
+**Learn how to use the best and most practical computer vision algorithms using OpenCV**
 
 ## What is this book about?
 An arena that has been positively impacted by the advancements in processing power and performance is the field of Computer Vision. It's only natural that over time, more and more algorithms are introduced to perform Computer Vision tasks more efficiently. Hands-On Algorithms for Computer Vision is a starting point for anyone who is interested in the field of Computer Vision and wants to explore the most practical algorithms used by professional Computer Vision developers. The book starts with the basics and builds up over the course of the chapters with hands-on examples for each algorithm.
