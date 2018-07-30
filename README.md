@@ -1,25 +1,24 @@
-# Hands-On Algorithms for Computer Vision
+# Building Serverless Python Web Services with Zappa
 
-<a href="https://www.packtpub.com/application-development/hands-algorithms-computer-vision?utm_source=github&utm_medium=repository&utm_campaign=9781789130942 "><img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B10760.png" alt="Hands-On Algorithms for Computer Vision" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/application-development/building-serverless-python-web-services-zappa?utm_source=github&utm_medium=repository&utm_campaign=9781788837613 "><img src="https://d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B09614_MockupCover_0.png" alt="Building Serverless Python Web Services with Zappa" height="256px" align="right"></a>
 
-This is the code repository for [Hands-On Algorithms for Computer Vision](https://www.packtpub.com/application-development/hands-algorithms-computer-vision?utm_source=github&utm_medium=repository&utm_campaign=9781789130942 ), published by Packt.
+This is the code repository for [Building Serverless Python Web Services with Zappa](https://www.packtpub.com/application-development/building-serverless-python-web-services-zappa?utm_source=github&utm_medium=repository&utm_campaign=9781788837613 ), published by Packt.
 
-**Learn how to use the best and most practical computer vision algorithms using OpenCV**
+**Master serverless architectures in Python and their implementation, with Zappa on three different frameworks. **
 
 ## What is this book about?
-An arena that has been positively impacted by the advancements in processing power and performance is the field of Computer Vision. It's only natural that over time, more and more algorithms are introduced to perform Computer Vision tasks more efficiently. Hands-On Algorithms for Computer Vision is a starting point for anyone who is interested in the field of Computer Vision and wants to explore the most practical algorithms used by professional Computer Vision developers. The book starts with the basics and builds up over the course of the chapters with hands-on examples for each algorithm.
+Serverless applications are becoming very popular these days, not just because they save developers the trouble of managing the servers, but also because they provide several other benefits such as cutting heavy costs and improving the overall performance of the application.
 
 This book covers the following exciting features:
-Get to grips with machine learning and artificial intelligence algorithms 
-Read, write, and process images and videos 
-Perform mathematical, matrix, and other types of image data operations 
-Create and use histograms from back-projection images 
-Detect motion, extract foregrounds, and track objects  
-Extract key points with a collection of feature detector algorithms 
-Develop cascade classifiers and use them, and train and test classifiers 
-Employ TensorFlow Object Detection to detect multiple objects 
+Build, test, and deploy a simple web service using AWS CLI. 
+Integrate Flask-based Python applications, via AWS-CLI configuration. 
+Design Rest APIs integrated with Zappa for Flask and Django . 
+Create a project in the Pyramid framework and configure it with Zappa. 
+Generate SSL Certificates using Amazon Certificate Manager. 
+Configure custom domains with AWS Route53. 
+Create a Docker container similar to AWS lambda. 
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1789130948) today!
+If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1788837614) today!
 
 <a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
 alt="https://www.packtpub.com/" border="5" /></a>
@@ -29,39 +28,64 @@ All of the code is organized into folders. For example, Chapter02.
 
 The code will look like the following:
 ```
-HistCompMethods method = HISTCMP_CORREL;
-double result = compareHist(histogram1, histogram2, method);
+client = boto3.client('lambda')
+response = client.invoke(
+  FunctionName='MyFunction',
+  InvocationType='Event'
+)
 ```
 
 **Following is what you need for this book:**
-Hands-On Algorithms for Computer Vision helps those who want to learn algorithms in Computer Vision to create and customize their applications. This book will also help existing Computer Vision developers customize their applications. A basic understanding of computer vision and programming experience is needed.
+Python Developers who are interested in learning how to develop fast and highly scalable serverless applications in Python, will find this book useful
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-8).
+With the following software and hardware list you can run all code files present in the book (Chapter 1-12).
 ### Software and Hardware List
 | Chapter | Software required | OS required |
 | -------- | ------------------------------------ | ----------------------------------- |
-| 1 | Microsoft Visual Studio 2017 or 2015 | Windows, Mac OS X, and Linux (Any) |
-| 2 | Xcode | Mac OS X |
-| 3 | Visual Studio Code 1.25  | Windows, Mac OS X, and Linux (Any) |
-| 4 | CMake 3.11.4 | Windows, Mac OS X, and Linux (Any) |
-| 5 | Python 3.6.5 | Windows, Mac OS X, and Linux (Any) |
-| 7 | OpenCV 3.4.2  | Windows, Mac OS X, and Linux (Any) |
+| 1 | demo | Windows, Mac OS X, and Linux (Any) |
+| 2 | demo | Windows, Mac OS X, and Linux (Any) |
+| 3 | demo | Windows, Mac OS X, and Linux (Any) |
+| 4 | demo | Windows, Mac OS X, and Linux (Any) |
+|  |  | Windows, Mac OS X, and Linux (Any) |
+|  |  | Windows, Mac OS X, and Linux (Any) |
+|  |  | Windows, Mac OS X, and Linux (Any) |
+|  |  | Windows, Mac OS X, and Linux (Any) |
 
-We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/HandsOnAlgorithmsforComputerVision_ColorImages.pdf).
+We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https:/?/?www.?packtpub.?com/?sites/?default/?files/downloads/?BuildingServerlessPythonWebServiceswithZappa_?ColorImages.?pdf).
 
 ### Related products
-* Practical Computer Vision [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/practical-computer-vision?utm_source=github&utm_medium=repository&utm_campaign=9781788297684 ) [[Amazon]](https://www.amazon.com/dp/B079QXG3WR)
+*  [[Packt]](https://www.packtpub.com/web-development/python-microservices-development?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1785881116)
 
-* Computer Vision with OpenCV 3 and Qt5 [[Packt]](https://www.packtpub.com/application-development/computer-vision-opencv-3-and-qt5?utm_source=github&utm_medium=repository&utm_campaign=9781788472395 ) [[Amazon]](https://www.amazon.com/dp/178847239X)
+* Building Serverless Applications with Python [[Packt]](https://www.packtpub.com/application-development/building-serverless-applications-python?utm_source=github&utm_medium=repository&utm_campaign=9781787288676 ) [[Amazon]](https://www.amazon.com/dp/1787288676)
 
+*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
+
+*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
 
 ## Get to Know the Author
-**Amin Ahmadi Tazehkandi**
-is an Iranian author, developer, and a computer vision expert. He completed his computer software engineering studies in Iran and has worked for numerous software and industrial companies around the world.
+**Abdulwahid Abdulhaque Barguzar**
+is a Software Architect and an active contributor in the open source community. He has developed a deep understanding of architecting software product development through Python web frameworks and JavaScript frameworks. He is passionate about implementing and mastering new technologies. In his free time, he researches innovative approaches to rapidly developing and designing a software product and automation testing, aiming to become a master Software Architect.
 
+****
+0
+
+****
+0
+
+****
+0
+
+****
+0
 
 ## Other books by the authors
-[Computer Vision with OpenCV 3 and Qt5](https://www.packtpub.com/application-development/computer-vision-opencv-3-and-qt5?utm_source=github&utm_medium=repository&utm_campaign=9781788472395 )
+[]()
 
+[]()
 
+[]()
+
+[]()
+
+[]()
 
