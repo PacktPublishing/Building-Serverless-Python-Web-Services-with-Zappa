@@ -25,7 +25,7 @@ alt="https://www.packtpub.com/" border="5" /></a>
 
 ## Instructions and Navigations
 All of the code is organized into folders. For example, Chapter02.
-Chapter 10 does not contain any code files.
+Chapter10 does not contain any code files.
 
 The code will look like the following:
 ```
