@@ -11,7 +11,7 @@ Serverless applications are becoming very popular these days, not just because t
 
 This book covers the following exciting features:
 Build, test, and deploy a simple web service using AWS CLI. 
-Integrate Flask-based Python applications, via AWS-CLI configuration. 
+Integrate Flask-based Python applications, via AWS CLI configuration. 
 Design Rest APIs integrated with Zappa for Flask and Django. 
 Create a project in the Pyramid framework and configure it with Zappa. 
 Generate SSL Certificates using Amazon Certificate Manager. 
