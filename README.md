@@ -1,6 +1,6 @@
 # Building Serverless Python Web Services with Zappa
 
-<a href="https://www.packtpub.com/application-development/building-serverless-python-web-services-zappa?utm_source=github&utm_medium=repository&utm_campaign=9781788837613 "><img src="https://d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B09614.png" alt="Building Serverless Python Web Services with Zappa" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/application-development/building-serverless-python-web-services-zappa?utm_source=github&utm_medium=repository&utm_campaign=9781788837613 "><img src="https://static.packt-cdn.com/products/9781788837613/cover/smaller" alt="Building Serverless Python Web Services with Zappa" height="256px" align="right"></a>
 
 This is the code repository for [Building Serverless Python Web Services with Zappa](https://www.packtpub.com/application-development/building-serverless-python-web-services-zappa?utm_source=github&utm_medium=repository&utm_campaign=9781788837613 ), published by Packt.
 
